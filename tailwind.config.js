@@ -29,6 +29,7 @@ module.exports = {
                 'co-shade': '#FFF6DA',
             },
         },
+
     },
     plugins: [
         require('@tailwindcss/typography'),
