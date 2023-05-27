@@ -10,12 +10,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
 <!--    <script src="dist/script.js"></script>-->
+
+    <style>
+        option {
+            background-repeat: no-repeat;
+            background-position: 0 50%;
+            padding-left: 2rem;
+        }
+        option[value='en']{
+            background-image: url(assets/img/flag-en.svg);
+        }
+    </style>
 </head>
-<body>
-    <div class="px-4 py-4 bg-amber-200">
-        <h2 class="py-2 co-text-h5 text-yellow">Hello</h2>
-        <h2 class="px-5 font-semibold ">Hi there</h2>
-        <h3 class="px-1 ">This is a header3</h3>
+<body class="bg-co-bg2">
+<div class="container mx-auto my-0 ">
+
+    <header class="flex justify-between align-middle h-58p pb-3">
+        <img src="/assets/img/logo.png" alt="Logo">
+        <div class="flex flex-row self-center items-center gap-1">
+            <img src="/assets/img/flag-en.svg" alt="en">
+            <label class="w-4 h-4 flex justify-center items-center"><img src="/assets/img/arrow_drop_down.svg" alt="Select country"></label>
+        </div>
+    </header>
+        <div class="h-1p w-full bg-co-dark-12"></div>
     </div>
+
 </body>
 </html>

@@ -28,6 +28,10 @@ module.exports = {
                 'co-bg2': '#FFFAEB',
                 'co-shade': '#FFF6DA',
             },
+            spacing: {
+                '1p': '1px',
+                '58p': '58px',
+            }
         },
 
     },
