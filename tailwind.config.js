@@ -40,11 +40,17 @@ module.exports = {
                 '52p': '3.25rem',
                 '58p': '58px',
                 '60p': '60px',
+                '100p': '100px',
                 '229p': '229px',
                 '148p': '148px',
             },
             maxWidth: {
                 '9': '90%',
+                '95/100': '95%'
+            },
+            borderRadius: {
+                'mobile': '50px',
+                'desktop': '100px',
             }
         },
     },
