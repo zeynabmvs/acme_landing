@@ -4,3 +4,5 @@
 - a solution to use color classes for svg path color
 - (done) add rounded-desktop
 - add new breakpoint padding size for button
+- custom classes for typography not working in lg:class-name format
+- 
