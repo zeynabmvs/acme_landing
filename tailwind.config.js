@@ -11,6 +11,77 @@ module.exports = {
             base: ['16px', '22px'],
             'xl': ['18px', '24px'],
             '2xl': ['22px', '24px'],
+            'co-button': ['24px', {
+                lineHeight: 'normal',
+                fontWeight: '700',
+            }],
+            'co-h1': ['80px', {
+                lineHeight: '90px',
+                fontWeight: '700',
+            }],
+            'co-h2': ['80px', {
+                lineHeight: '72px',
+                fontWeight: '700',
+            }],
+            'co-h3': ['60px', {
+                lineHeight: '72px',
+                fontWeight: '700',
+            }],
+            'co-h3-bold': ['30px', {
+                lineHeight: 'normal',
+                fontWeight: '700',
+            }],
+            'co-h4': ['50px', {
+                lineHeight: 'normal',
+                fontWeight: '700',
+            }],
+            'co-h5': ['30px', {
+                lineHeight: '40px',
+                fontWeight: '400',
+            }],
+            'co-h5-sbold': ['30px', {
+                lineHeight: 'normal',
+                fontWeight: '600',
+            }],
+            'co-h5-capital': ['30px', {
+                lineHeight: 'normal',
+                fontWeight: '700',
+                textTransform: 'uppercase'
+            }],
+            'co-h6': ['20px', {
+                lineHeight: 'normal',
+                fontWeight: '600',
+            }],
+            'co-p1': ['20px', {
+                lineHeight: 'normal',
+                fontWeight: '400',
+            }],
+            'co-p1_underline': ['20px', {
+                lineHeight: '34px',
+                fontWeight: '600',
+                textDecoration: 'underline'
+            }],
+            'co-p2': ['18px', {
+                lineHeight: 'normal',
+                fontWeight: '350',
+            }],
+            'co-mo-h1': ['36px', {
+                lineHeight: 'normal',
+                fontWeight: '700',
+            }],
+            'co-mo-h2': ['24px', {
+                lineHeight: 'normal',
+                fontWeight: '600',
+            }],
+            'co-mo-h2-bold': ['24px', {
+                lineHeight: 'normal',
+                fontWeight: '700',
+            }],
+            'co-mo-h5-capital': ['24px', {
+                lineHeight: 'normal',
+                fontWeight: '700',
+                textTransform: 'uppercase'
+            }],
         },
         extend: {
             colors: {
@@ -69,6 +140,7 @@ module.exports = {
                 'mobile': '50px',
                 'desktop': '100px',
                 'box': '55px',
+                'box-desktop': '60px'
             }
         },
     },
