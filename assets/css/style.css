@@ -14,3 +14,13 @@ html {
 body {
     color: #262626;
 }
+
+.co-container {
+    max-width: 90%;
+}
+
+@media (min-width: 1441px) {
+    .co-container {
+        max-width: 1420px;
+    }
+}

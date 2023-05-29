@@ -6,6 +6,13 @@ module.exports = {
     content: ["./index.html"],
     mode: 'jit',
     theme: {
+        screens: {
+            'sm': '640px',
+            'md': '768px',
+            'lg': '1024px',
+            'xl': '1440px',
+            '4k': '2560px',
+        },
         fontSize: {
             sm: '15px',
             base: ['16px', '22px'],
