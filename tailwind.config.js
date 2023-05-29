@@ -6,6 +6,12 @@ module.exports = {
     content: ["./index.html"],
     mode: 'jit',
     theme: {
+        fontSize: {
+            sm: '15px',
+            base: ['16px', '22px'],
+            'xl': ['18px', '24px'],
+            '2xl': ['22px', '24px'],
+        },
         extend: {
             colors: {
                 'co-white': '#FFFFFF',
@@ -31,12 +37,15 @@ module.exports = {
             spacing: {
                 '1p': '1px',
                 '7p': '7px',
+                '9p': '9px',
                 '22p': '1.375rem',
                 '17p': '17px',
                 '18p': '18px',
                 '30p': '1.875rem',
                 '38p': '38px',
                 '44p': '44px',
+                '46p': '46px',
+                '47p': '47px',
                 '49p': '49px',
                 '50p': '3.125rem',
                 '52p': '3.25rem',
@@ -50,11 +59,13 @@ module.exports = {
             },
             maxWidth: {
                 '9': '90%',
+                '95': '95%',
                 '2/3': '70%',
             },
             borderRadius: {
                 'mobile': '50px',
                 'desktop': '100px',
+                'box': '55px',
             }
         },
     },

@@ -11,7 +11,9 @@ html {
     font-family: 'Open Sans', sans-serif;
 }
 
-
+body {
+    color: #262626;
+}
 .co-text-button { font-size: 24px; font-weight: 700; line-height: normal}
 
 .co-text-h1 { font-size: 80px; font-weight: 700; line-height: 90px}
