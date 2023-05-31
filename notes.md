@@ -8,4 +8,5 @@
 - tablet design for all sections must be checked
 - adding all the animations
 - in accordion items change + to - using js
-- better solution for fill color in svg 
+- better solution for fill color in svg
+- - accordion title: # Todo after click - text-co-h3-bold
