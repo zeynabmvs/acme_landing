@@ -3,14 +3,13 @@
 - leaf background best solution?
 - a solution to use color classes for svg path color
 - (done) add rounded-desktop
-- add new breakpoint padding size for button
+- (done) add new breakpoint padding size for button
 - (done) custom classes for typography not working in lg:class-name format
 - tablet design for all sections must be checked
 - adding all the animations
 - in accordion items change + to - using js
-- better solution for fill color in svg
+- (done) better solution for fill color in svg
 - accordion title: # Todo after click - text-co-h3-bold
 - accordion title mobile text-co-mo-h2 -> text-co-mo-h2-bold
-- button needs different paddings
 - accordion titles have more padding on left
 - 

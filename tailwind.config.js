@@ -22,6 +22,10 @@ module.exports = {
                 lineHeight: 'normal',
                 fontWeight: '700',
             }],
+            'co-button-mo': ['18px', {
+                lineHeight: '24px',
+                fontWeight: '700',
+            }],
             'co-h1': ['80px', {
                 lineHeight: '90px',
                 fontWeight: '700',
@@ -133,6 +137,7 @@ module.exports = {
                 '60p': '60px',
                 '66p': '66px',
                 '72p': '72px',
+                '78p': '78px',
                 '90p': '90px',
                 '100p': '100px',
                 '118p': '118px',
@@ -145,6 +150,7 @@ module.exports = {
                 '172p': '172px',
                 '180p': '180px',
                 '272p': '272px',
+                '350p': '350px',
                 '472p': '472px',
             },
             maxWidth: {
