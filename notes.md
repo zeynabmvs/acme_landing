@@ -11,5 +11,5 @@
 - (done) better solution for fill color in svg
 - accordion title: # Todo after click - text-co-h3-bold
 - accordion title mobile text-co-mo-h2 -> text-co-mo-h2-bold
-- accordion titles have more padding on left
+- (done) accordion titles have more padding on left
 - 
