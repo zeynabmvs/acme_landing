@@ -6,4 +6,6 @@
 - add new breakpoint padding size for button
 - (done) custom classes for typography not working in lg:class-name format
 - tablet design for all sections must be checked
-- 
+- adding all the animations
+- in accordion items change + to - using js
+- better solution for fill color in svg 

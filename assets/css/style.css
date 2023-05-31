@@ -24,3 +24,46 @@ body {
         max-width: 1420px;
     }
 }
+
+[type=checkbox]{
+    box-sizing: border-box;
+    padding: 0;
+}
+input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.faq-item-content {
+    max-height: 0;
+    transition: all 0.35s;
+}
+
+/*xcx {*/
+/*    transition: all 0.35s;*/
+/*}*/
+
+
+/*input[type="checkbox"]:checked .close-faq{*/
+/*    display: block;*/
+/*}*/
+
+
+/*input[type="checkbox"]:checked .open-faq{*/
+/*    display: none;*/
+/*}*/
+
+input[type="checkbox"]:checked ~ .faq-item-content {
+    max-height: 100vh;
+    /*color: green;*/
+    padding-top: 20px;
+}
+.faq-item-content {
+    /*transition: all 3s ease-in;*/
+}
+/*input:checked + label {*/
+/*    color: red;*/
+/*}*/
+
+
