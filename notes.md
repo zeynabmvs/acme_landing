@@ -9,4 +9,7 @@
 - adding all the animations
 - in accordion items change + to - using js
 - better solution for fill color in svg
-- - accordion title: # Todo after click - text-co-h3-bold
+- accordion title: # Todo after click - text-co-h3-bold
+- accordion title mobile text-co-mo-h2 -> text-co-mo-h2-bold
+- button needs different paddings
+- 
