@@ -17,6 +17,8 @@ body {
 
 .co-container {
     max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media (min-width: 1441px) {
@@ -65,5 +67,3 @@ input[type="checkbox"]:checked ~ .faq-item-content {
 /*input:checked + label {*/
 /*    color: red;*/
 /*}*/
-
-

@@ -158,6 +158,10 @@ module.exports = {
                 '95': '95%',
                 '2/3': '70%',
             },
+            backgroundImage: {
+                'leaf-mo': "url('/assets/img/leaf-mo.svg')",
+                'leaf': "url('/assets/img/leaf.svg')",
+            },
             borderRadius: {
                 'mobile': '50px',
                 'desktop': '100px',
