@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-* {
-    /*color:red*/
-}
-
 html {
     font-family: 'Open Sans', sans-serif;
 }
@@ -67,3 +62,51 @@ input[type="checkbox"]:checked ~ .faq-item-content {
 /*input:checked + label {*/
 /*    color: red;*/
 /*}*/
+
+@layer components {
+    .btn {
+        @apply flex flex-row justify-between items-center rounded-full w-full max-w-[350px] h-60p lg:h-78p lg:w-350p text-co-button-mo lg:text-co-button px-38p pt-17p pb-18p lg:px-50p lg:pt-22p lg:pb-6;
+    }
+
+    .btn:hover {
+        @apply border-2  border-solid shadow-[9px_9px_0px];
+    }
+
+    .btn-animation {
+        transition: all .15s ease-in-out;
+    }
+
+    .btn-animation svg {
+        animation: shake-out 1s;
+        animation-fill-mode: forwards;
+    }
+
+    .btn-animation:hover svg {
+        animation: shake-in 1s;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes shake-out {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(-25deg); }
+
+    35% { transform: rotate(25deg); }
+
+    40% { transform: rotate(-10deg); }
+    60% { transform: rotate(10deg); }
+
+    100% { transform: rotate(0deg); }
+}
+
+@keyframes shake-in {
+    0% { transform: rotate(90deg); }
+
+    30% { transform: rotate(125deg); }
+    40% { transform: rotate(55deg); }
+
+    55% { transform: rotate(105deg); }
+    65% { transform: rotate(75deg); }
+
+    100% { transform: rotate(90deg); }
+}
