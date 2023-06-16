@@ -113,7 +113,6 @@ input[type="checkbox"]:checked ~ .faq-item-content {
 
 .box {
     position: relative;
-    overflow: hidden;
 }
 
 .box::before {
