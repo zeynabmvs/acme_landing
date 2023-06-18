@@ -111,27 +111,34 @@ input[type="checkbox"]:checked ~ .faq-item-content {
     100% { transform: rotate(90deg); }
 }
 
-.box {
-    position: relative;
-}
+@layer components {
+    .box {
+        @apply bg-red-100 rounded-box w-full pt-46p pb-52p lg:p-9 hover:drop-shadow-[0_0px_172px_rgba(8,8,9,0.32)] hover:text-co-white transition-all delay-75;
+        position: relative;
+        transform: perspective(1px) translateZ(0);
+        transition: color .5s;
+        overflow: hidden;
+    }
 
-.box::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #262626;
-    transform: scale3d(1, 0, 1);
-    transform-origin: center bottom;
-    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    z-index: -1;
-    
-}
+    .box::before {
+        @apply bg-co-dark;
 
-.box:hover::before {
-    transform: scale3d(1, 1, 1);
-    background-color: #262626;
+        content: "";
+        z-index: -1;
+        position: absolute;
+        top: -65px;
+        bottom: -655px;
+        left: 0;
+        right: 0;
+        transform: scaleY(0);
+        transform-origin: 50% 100%;
+        transition: transform 0.8s ease-out;
+    }
+
+    .box:hover::before {
+        @apply bg-co-dark;
+
+        transform: scaleY(1);
+        transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    }
 }
