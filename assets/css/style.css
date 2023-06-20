@@ -113,7 +113,7 @@ input[type="checkbox"]:checked ~ .faq-item-content {
 
 @layer components {
     .box {
-        @apply bg-red-100 rounded-box w-full pt-46p pb-52p lg:p-9 hover:drop-shadow-[0_0px_172px_rgba(8,8,9,0.32)] hover:text-co-white transition-all delay-75;
+        @apply bg-co-white rounded-box w-full pt-46p pb-52p lg:p-9 hover:drop-shadow-[0_0px_172px_rgba(8,8,9,0.32)] hover:text-co-white transition-all delay-75;
         position: relative;
         transform: perspective(1px) translateZ(0);
         transition: color .5s;
@@ -126,8 +126,8 @@ input[type="checkbox"]:checked ~ .faq-item-content {
         content: "";
         z-index: -1;
         position: absolute;
-        top: -65px;
-        bottom: -655px;
+        top: 0;
+        bottom: 0;
         left: 0;
         right: 0;
         transform: scaleY(0);
@@ -137,8 +137,53 @@ input[type="checkbox"]:checked ~ .faq-item-content {
 
     .box:hover::before {
         @apply bg-co-dark;
-
         transform: scaleY(1);
         transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
     }
+
+
+    .card {
+        position: relative;
+        transition: color .3s;
+        overflow: hidden;
+        z-index: 100;
+    }
+
+    .card:hover {
+        @apply text-co-white;
+    }
+
+    .card:hover .card-name {
+        @apply text-co-yellow;
+    }
+
+    .card:hover .card-arrow-l path{
+        @apply fill-co-white;
+    }
+
+    .card::before {
+        content: "";
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: scaleY(0);
+        transform-origin: 50% 100%;
+        transition: transform 0.3s ease-out;
+        background-image: url("/assets/img/customer1.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        filter: brightness(35%)
+    }
+
+    .card:hover::before {
+        opacity: 1;
+        transform: scaleY(1);
+        transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    }
+
 }
+

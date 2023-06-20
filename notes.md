@@ -8,8 +8,8 @@
 - tablet design for all sections must be checked
 - adding all the animations
   - type writing in hero section
-  - button hover state
-  - four boxes hover state
+  - (done) button hover state
+  - (done) four boxes hover state
   - testimonial hover bg
   - two vector images have active version
 - in accordion items change + to - using js
