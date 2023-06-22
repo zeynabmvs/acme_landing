@@ -10,7 +10,7 @@
   - type writing in hero section
   - (done) button hover state
   - (done) four boxes hover state
-  - testimonial hover bg
+  - (done) testimonial hover bg
   - two vector images have active version
 - in accordion items change + to - using js
 - accordion title: # Todo after click - text-co-h3-bold

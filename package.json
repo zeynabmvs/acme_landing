@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "npm-run-all --parallel sync tailwindwatch",
     "sync": "browser-sync start --server --files 'index.html' ",
-    "tailwindwatch": "npx tailwindcss -i ./assets/css/style.css -o ./dist/style.css --watch",
+    "tailwindwatch": "tailwindcss -i ./assets/css/style.css -o ./dist/style.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
