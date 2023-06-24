@@ -95,6 +95,9 @@ module.exports = {
             }],
         },
         extend: {
+            fontFamily: {
+                primary: "Noto",
+            },
             colors: {
                 'co-white': '#FFFFFF',
                 'co-white2': '#FFFAEB',
