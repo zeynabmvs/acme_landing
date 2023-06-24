@@ -22,47 +22,6 @@ body {
     }
 }
 
-[type=checkbox]{
-    box-sizing: border-box;
-    padding: 0;
-}
-input {
-    position: absolute;
-    opacity: 0;
-    z-index: -1;
-}
-
-.faq-item-content {
-    max-height: 0;
-    transition: all 0.35s;
-}
-
-/*xcx {*/
-/*    transition: all 0.35s;*/
-/*}*/
-
-
-/*input[type="checkbox"]:checked .close-faq{*/
-/*    display: block;*/
-/*}*/
-
-
-/*input[type="checkbox"]:checked .open-faq{*/
-/*    display: none;*/
-/*}*/
-
-input[type="checkbox"]:checked ~ .faq-item-content {
-    max-height: 100vh;
-    /*color: green;*/
-    padding-top: 20px;
-}
-.faq-item-content {
-    /*transition: all 3s ease-in;*/
-}
-/*input:checked + label {*/
-/*    color: red;*/
-/*}*/
-
 @layer components {
     .btn {
         @apply flex flex-row justify-between items-center rounded-full w-full max-w-[350px] h-60p lg:h-78p lg:w-350p text-co-button-mo lg:text-co-button px-38p pt-17p pb-18p lg:px-50p lg:pt-22p lg:pb-6;
@@ -141,7 +100,6 @@ input[type="checkbox"]:checked ~ .faq-item-content {
         transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
     }
 
-
     .card {
         position: relative;
         transition: color .3s;
@@ -162,54 +120,59 @@ input[type="checkbox"]:checked ~ .faq-item-content {
     }
 }
 
-    .card::before {
-        content: "";
-        z-index: -1;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        transform: scaleY(0);
-        transform-origin: 50% 100%;
-        transition: transform 0.3s ease-out;
-        background-image: url("/assets/img/customer1.jpeg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-        filter: brightness(35%)
-    }
-
-    .card:hover::before {
-        opacity: 1;
-        transform: scaleY(1);
-        transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-    }
-
-    @layer components {
-        .faq-arrow {
-            @apply w-[22px] md:w-[28px] h-[22px] md:h-[28px] border-t-4 border-r-4 border-co-yellow ml-2 mr-2 mt-1;
-            transition: transform 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-            transform: rotate(45deg);
-        }
-    }
-
-    .faq input[type="checkbox"]:checked + label  .faq-arrow {
-        transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-        transform: rotate(135deg);
-    }
-
-    .faq input[type="checkbox"]:checked ~  div {
-        transform: scaleY(1);
-        max-height: 225px;
-        transition: all .3s ease-in-out;
-    }
-
-    .faq input[type='checkbox']:not(:checked) ~  div {
+.card::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     transform: scaleY(0);
-        transform-origin: top;
-        max-height: 0;
-        overflow: hidden;
-        position: relative;
-        transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transform-origin: 50% 100%;
+    transition: transform 0.3s ease-out;
+    background-image: url("/assets/img/customer1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(35%)
+}
+
+.card:hover::before {
+    opacity: 1;
+    transform: scaleY(1);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+@layer components {
+    .faq-arrow {
+        @apply bg-co-white hover:bg-co-yellow w-12 h-12 flex shrink-0 justify-center items-center rounded-full transition-all duration-200 ease-in; 
     }
+    .faq-arrow:hover svg path {
+        @apply stroke-co-white
+    }
+}
+
+.faq input[type="checkbox"]:checked ~  div {
+    transform: scaleY(1);
+    max-height: 350px;
+    transition: all .3s ease-in-out;
+}
+
+.faq input[type='checkbox']:not(:checked) ~  div {
+    transform: scaleY(0);
+    transform-origin: top;
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.rotate-me {
+    transition: transform 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.faq input[type="checkbox"]:checked + label .rotate-me {
+    transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transform: rotate(90deg);
+}
