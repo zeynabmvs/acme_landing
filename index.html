@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <title>Corporate Theme</title>
 
+    <link href="assets/img/favicon.png" rel="icon" type="image/png">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <!-- displays site properly based on user's device -->
 
     <link href="dist/style.css" rel="stylesheet" type="text/css">
-    <link href="assets/img/favicon.png" rel="icon" type="image/png">
 
-    <!--    <script src="dist/script.js"></script>-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+
 
 </head>
 
@@ -142,13 +144,15 @@
     <!-- Section 1 -->
     <div class="co-container">
         <div class="rounded-mobile lg:rounded-desktop bg-co-yellow mb-10 lg:mb-150p">
-            <div class="mx-auto max-w-9 flex flex-col xl:flex-row-reverse gap-30p xl:gap:44p items-center py-22p lg:py-135p">
+            <div
+                class="mx-auto max-w-9 flex flex-col xl:flex-row-reverse gap-30p xl:gap:44p items-center py-22p lg:py-135p">
                 <div class="xl:flex-1 flex justify-center">
                     <img alt=" " height="714" src="assets/img/vector-1.svg" width="714">
                 </div>
 
                 <div class="xl:flex-1 flex justify-center">
-                    <div class="flex flex-col gap-30p lg:gap-50p items-center xl:items-start text-center xl:text-left xl:w-[70%]">
+                    <div
+                        class="flex flex-col gap-30p lg:gap-50p items-center xl:items-start text-center xl:text-left xl:w-[70%]">
                         <h1 class="text-co-mo-h1 lg:text-co-h4">Phasellus a vitae
                             iaculis magna
                             eleifend pulvinar
@@ -188,7 +192,8 @@
     <!--Section 2-->
     <div class="co-container">
         <div class="rounded-mobile lg:rounded-desktop bg-co-dark mb-10 pb-5 lg:py-58p lg:mb-150p">
-            <div class="mx-auto max-w-9 flex flex-col-reverse xl:grid xl:grid-cols-2 gap-10 lg:gap-11 items-center pt-47p lg:pt-0">
+            <div
+                class="mx-auto max-w-9 flex flex-col-reverse xl:grid xl:grid-cols-2 gap-10 lg:gap-11 items-center pt-47p lg:pt-0">
 
                 <!-- four boxes -->
                 <div class="flex flex-col gap-5 w-full">
@@ -261,7 +266,8 @@
                 </div>
 
                 <!-- info button box -->
-                <div class="flex flex-col items-center gap-30p text-center xltext-left lx:items-start w-[90%] xl:w-auto mx-auto">
+                <div
+                    class="flex flex-col items-center gap-30p text-center xltext-left lx:items-start w-[90%] xl:w-auto mx-auto">
                     <p class="text-co-p1 text-co-yellow lg:pr-50p">Quisque porttitor vitae vel amet neque scelerisque
                         mattis.
                         Consectetur nibh velit magna consectetur leo. </p>
@@ -293,50 +299,86 @@
 
 
     <!-- Testimonial Section -->
-    <div class="co-container">
-        <div class="card bg-co-white rounded-mobile lg:rounded-desktop pt-42p pb-38p mb-10 lg:mb-170p lg:py-100p">
+    <div class=" co-container">
 
-            <div class="w-[85%] mx-auto">
+        <div
+            class="testimonial bg-co-white rounded-mobile lg:rounded-desktop pt-42p pb-38p mb-10 lg:mb-170p lg:py-100p">
 
-                <!-- Card -->
-                <div class="card-content flex flex-col lg:flex-row items-center gap-10 lg:gap-72p lg:justify-center">
+            <div class="swiper flex flex-col gap-10">
 
-                    <img alt="Customer Picture" class="rounded-full w-272p h-272p lg:w-472p lg:h-472p lg:basis-1/3"
-                        src="/assets/img/customer1.jpeg">
 
-                    <div
-                        class="flex flex-col items-center lg:items-start text-center lg:text-start gap-5 lg:basis-2/3 lg:mb-5">
-                        <h4 class="text-co-h3-bold lg:text-co-h4">What our customers thought?</h4>
-                        <p class="text-base lg:text-co-h5">Euismod magna id purus eget nunc ligula suspendisse dui
-                            netus.
-                            Condimentum blandit rutrum at mauris enim pulvinar duis etiam duis. </p>
-                        <span class="card-name text-co-button mb-2.5 lg:mb-5">Holly Davidson</span>
+                <div class="swiper-wrapper">
 
-                        <div class="flex flex-row justify-center gap-10">
-                            <button class="card-arrow-l">
-                                <svg width="41" height="17" viewBox="0 0 41 17" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M0.914062 8.48779L9.21484 0.187012L9.21484 6.43701L40.4648 6.43701V10.5386L9.21484 10.5386L9.21484 16.7886L0.914062 8.48779Z"
-                                        fill="#262626" />
-                                </svg>
-                            </button>
-                            <button>
-                                <svg width="41" height="17" viewBox="0 0 41 17" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M40.0156 8.48779L31.7148 16.7886V10.5386H0.464844V6.43701H31.7148V0.187012L40.0156 8.48779Z"
-                                        fill="#F9B800" />
-                                </svg>
-                            </button>
+                    <!-- Swiper item -->
+                    <div class="swiper-slide">
+                        <div class="w-[85%] mx-auto">
+                            <div
+                                class="card-content flex flex-col lg:flex-row items-center gap-10 lg:gap-72p lg:justify-center">
 
+                                <img alt="Customer Picture"
+                                    class="rounded-full w-272p h-272p lg:w-472p lg:h-472p lg:basis-1/3"
+                                    src="/assets/img/customer1.jpeg">
+
+                                <div
+                                    class="flex flex-col items-center lg:items-start text-center lg:text-start gap-5 lg:basis-2/3 lg:mb-5">
+                                    <h4 class="text-co-h3-bold lg:text-co-h4">What our customers thought?</h4>
+                                    <p class="text-base lg:text-co-h5">
+                                        Condimentum blandit rutrum at mauris enim pulvinar duis etiam duis. </p>
+                                    <span class="card-name text-co-button mb-2.5 lg:mb-5">Holly Davidson</span>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
 
+                    <!-- Swiper item -->
+                    <div class="swiper-slide">
+                        <div class="w-[85%] mx-auto">
+                            <div
+                                class="card-content flex flex-col lg:flex-row items-center gap-10 lg:gap-72p lg:justify-center">
+
+                                <img alt="Customer Picture"
+                                    class="rounded-full w-272p h-272p lg:w-472p lg:h-472p lg:basis-1/3"
+                                    src="/assets/img/customer2.jpg">
+
+                                <div
+                                    class="flex flex-col items-center lg:items-start text-center lg:text-start gap-5 lg:basis-2/3 lg:mb-5">
+                                    <h4 class="text-co-h3-bold lg:text-co-h4">What our customers thought?</h4>
+                                    <p class="text-base lg:text-co-h5">
+                                        Condimentum blandit rutrum at mauris enim pulvinar duis etiam duis. </p>
+                                    <span class="card-name text-co-button mb-2.5 lg:mb-5">Holly Davidson</span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> <!--swiper wrapper -->
+
+                <!-- navigation buttons -->
+                <div class="flex flex-row justify-center gap-10">
+                    <button class="card-arrow-l">
+                        <svg width="41" height="17" viewBox="0 0 41 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.914062 8.48779L9.21484 0.187012L9.21484 6.43701L40.4648 6.43701V10.5386L9.21484 10.5386L9.21484 16.7886L0.914062 8.48779Z"
+                                fill="#262626" />
+                        </svg>
+                    </button>
+                    <button class="">
+                        <svg width="41" height="17" viewBox="0 0 41 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M40.0156 8.48779L31.7148 16.7886V10.5386H0.464844V6.43701H31.7148V0.187012L40.0156 8.48779Z"
+                                fill="#F9B800" />
+                        </svg>
+                    </button>
                 </div>
 
-            </div>
 
+                <!-- If we need navigation buttons -->
+                <!-- <div class="swiper-button-prev"></div> -->
+                <!-- <div class="swiper-button-next"></div> -->
+
+            </div>
         </div>
     </div>
 
@@ -361,7 +403,7 @@
                                 class="flex flex-col lg:flex-row items-center lg:justify-start gap-3.5 flex-wrap justify-center">
                                 <div
                                     class="flex flex-row gap-7p bg-co-bg2 rounded-full py-3 pr-10 pl-5 lg:py-3.5 lg:pl-3.5 justify-between items-center text-co-h6">
-                            <svg class="shrink-0" fill="none" height="26" viewBox="0 0 26 26" width="26"
+                                    <svg class="shrink-0" fill="none" height="26" viewBox="0 0 26 26" width="26"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M13 0.519531C6.08594 0.519531 0.519531 6.08594 0.519531 13C0.519531 19.9141 6.08594 25.4805 13 25.4805C19.9141 25.4805 25.4805 19.9141 25.4805 13C25.4805 6.08594 19.9141 0.519531 13 0.519531ZM13 23.0195C7.49219 23.0195 2.98047 18.5078 2.98047 13C2.98047 7.49219 7.49219 2.98047 13 2.98047C18.5078 2.98047 23.0195 7.49219 23.0195 13C23.0195 18.5078 18.5078 23.0195 13 23.0195ZM18.7422 7.49219L10.4805 15.6953L7.25781 12.4727L5.5 14.2305L10.4805 19.2695L20.5 9.25L18.7422 7.49219Z"
@@ -372,7 +414,7 @@
 
                                 <div
                                     class="flex flex-row gap-7p bg-co-bg2 rounded-full py-3 pr-10 pl-5 lg:py-3.5 lg:pl-3.5 justify-between items-center text-co-h6">
-                            <svg class="shrink-0" fill="none" height="26" viewBox="0 0 26 26" width="26"
+                                    <svg class="shrink-0" fill="none" height="26" viewBox="0 0 26 26" width="26"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M13 0.519531C6.08594 0.519531 0.519531 6.08594 0.519531 13C0.519531 19.9141 6.08594 25.4805 13 25.4805C19.9141 25.4805 25.4805 19.9141 25.4805 13C25.4805 6.08594 19.9141 0.519531 13 0.519531ZM13 23.0195C7.49219 23.0195 2.98047 18.5078 2.98047 13C2.98047 7.49219 7.49219 2.98047 13 2.98047C18.5078 2.98047 23.0195 7.49219 23.0195 13C23.0195 18.5078 18.5078 23.0195 13 23.0195ZM18.7422 7.49219L10.4805 15.6953L7.25781 12.4727L5.5 14.2305L10.4805 19.2695L20.5 9.25L18.7422 7.49219Z"
@@ -383,7 +425,7 @@
 
                                 <div
                                     class="flex flex-row gap-7p bg-co-bg2 rounded-full py-3 pr-10 pl-5 lg:py-3.5 lg:pl-3.5 justify-between items-center text-co-h6">
-                            <svg class="shrink-0" fill="none" height="26" viewBox="0 0 26 26" width="26"
+                                    <svg class="shrink-0" fill="none" height="26" viewBox="0 0 26 26" width="26"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M13 0.519531C6.08594 0.519531 0.519531 6.08594 0.519531 13C0.519531 19.9141 6.08594 25.4805 13 25.4805C19.9141 25.4805 25.4805 19.9141 25.4805 13C25.4805 6.08594 19.9141 0.519531 13 0.519531ZM13 23.0195C7.49219 23.0195 2.98047 18.5078 2.98047 13C2.98047 7.49219 7.49219 2.98047 13 2.98047C18.5078 2.98047 23.0195 7.49219 23.0195 13C23.0195 18.5078 18.5078 23.0195 13 23.0195ZM18.7422 7.49219L10.4805 15.6953L7.25781 12.4727L5.5 14.2305L10.4805 19.2695L20.5 9.25L18.7422 7.49219Z"
@@ -394,7 +436,7 @@
 
                                 <div
                                     class="flex flex-row gap-7p bg-co-bg2 rounded-full py-3 pr-10 pl-5 lg:py-3.5 lg:pl-3.5 justify-between items-center text-co-h6">
-                            <svg class="shrink-0" fill="none" height="26" viewBox="0 0 26 26" width="26"
+                                    <svg class="shrink-0" fill="none" height="26" viewBox="0 0 26 26" width="26"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M13 0.519531C6.08594 0.519531 0.519531 6.08594 0.519531 13C0.519531 19.9141 6.08594 25.4805 13 25.4805C19.9141 25.4805 25.4805 19.9141 25.4805 13C25.4805 6.08594 19.9141 0.519531 13 0.519531ZM13 23.0195C7.49219 23.0195 2.98047 18.5078 2.98047 13C2.98047 7.49219 7.49219 2.98047 13 2.98047C18.5078 2.98047 23.0195 7.49219 23.0195 13C23.0195 18.5078 18.5078 23.0195 13 23.0195ZM18.7422 7.49219L10.4805 15.6953L7.25781 12.4727L5.5 14.2305L10.4805 19.2695L20.5 9.25L18.7422 7.49219Z"
@@ -405,7 +447,7 @@
 
                                 <div
                                     class="flex flex-row gap-7p bg-co-bg2 rounded-full py-3 pr-10 pl-5 lg:py-3.5 lg:pl-3.5 justify-between items-center text-co-h6">
-                            <svg class="shrink-0" fill="none" height="26" viewBox="0 0 26 26" width="26"
+                                    <svg class="shrink-0" fill="none" height="26" viewBox="0 0 26 26" width="26"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M13 0.519531C6.08594 0.519531 0.519531 6.08594 0.519531 13C0.519531 19.9141 6.08594 25.4805 13 25.4805C19.9141 25.4805 25.4805 19.9141 25.4805 13C25.4805 6.08594 19.9141 0.519531 13 0.519531ZM13 23.0195C7.49219 23.0195 2.98047 18.5078 2.98047 13C2.98047 7.49219 7.49219 2.98047 13 2.98047C18.5078 2.98047 23.0195 7.49219 23.0195 13C23.0195 18.5078 18.5078 23.0195 13 23.0195ZM18.7422 7.49219L10.4805 15.6953L7.25781 12.4727L5.5 14.2305L10.4805 19.2695L20.5 9.25L18.7422 7.49219Z"
@@ -416,7 +458,7 @@
 
                                 <div
                                     class="flex flex-row gap-7p bg-co-bg2 rounded-full py-3 pr-10 pl-5 lg:py-3.5 lg:pl-3.5 justify-between items-center text-co-h6">
-                            <svg class="shrink-0" fill="none" height="26" viewBox="0 0 26 26" width="26"
+                                    <svg class="shrink-0" fill="none" height="26" viewBox="0 0 26 26" width="26"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M13 0.519531C6.08594 0.519531 0.519531 6.08594 0.519531 13C0.519531 19.9141 6.08594 25.4805 13 25.4805C19.9141 25.4805 25.4805 19.9141 25.4805 13C25.4805 6.08594 19.9141 0.519531 13 0.519531ZM13 23.0195C7.49219 23.0195 2.98047 18.5078 2.98047 13C2.98047 7.49219 7.49219 2.98047 13 2.98047C18.5078 2.98047 23.0195 7.49219 23.0195 13C23.0195 18.5078 18.5078 23.0195 13 23.0195ZM18.7422 7.49219L10.4805 15.6953L7.25781 12.4727L5.5 14.2305L10.4805 19.2695L20.5 9.25L18.7422 7.49219Z"
@@ -464,56 +506,65 @@
             <!-- Accordion -->
             <div class="overflow-hidden flex flex-col gap-3.5 lg:gap-6">
 
-                <div class="faq bg-co-white rounded-mobile py-30p pr-30p pl-34p lg:pt-40p lg:pb-44p lg:pl-90p lg:pr-60p">
+                <div
+                    class="faq bg-co-white rounded-mobile py-30p pr-30p pl-34p lg:pt-40p lg:pb-44p lg:pl-90p lg:pr-60p">
                     <input id="chk1" type="checkbox" class="hidden">
                     <label for="chk1"
                         class="cursor-pointer flex flex-row items-center justify-between gap-5 overflow-hidden relative">
                         <span class="faq-heading inline-block text-co-mo-h2 lg:text-co-h5-sbold">Quam vehicula faucibus
                             amet lorem? </span>
 
-                            <span class="faq-arrow">
-                                <svg class="rotate-me" width="36" height="36" viewBox="0 0 24 24"
-                                    fill="none" xmlns="http://www.w3.org/2000/svg"><g id="vuesax/linear/arrow-right"><g id="vuesax/linear/arrow-right_2"><g id="arrow-right">
-                                        <path class="stroke-co-yellow" id="Vector"
-                                                    d="M8.91003 19.9201L15.43 13.4001C16.2 12.6301 16.2 11.3701 15.43 10.6001L8.91003 4.08008"
-                                                    stroke="#292D32" stroke-width="3.5" stroke-miterlimit="10"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                            </g>
+                        <span class="faq-arrow">
+                            <svg class="rotate-me" width="36" height="36" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="vuesax/linear/arrow-right">
+                                    <g id="vuesax/linear/arrow-right_2">
+                                        <g id="arrow-right">
+                                            <path class="stroke-co-yellow" id="Vector"
+                                                d="M8.91003 19.9201L15.43 13.4001C16.2 12.6301 16.2 11.3701 15.43 10.6001L8.91003 4.08008"
+                                                stroke="#292D32" stroke-width="3.5" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
                                         </g>
                                     </g>
-                                </svg>
-                            </span>                    </label>
+                                </g>
+                            </svg>
+                        </span> </label>
                     <div class="faq-text text-co-p2 lg:text-co-h5 p-0 transition-all ease-in-out pt-5">Nunc ligula
                         suspendisse duis etiam duis. Mauris fermentum praesent tellus euismod. Quam vehicula faucibus
                         amet lorem. Nunc ligula suspendisse duis etiam duis. Mauris fermentum praesent tellus euismod.
                     </div>
                 </div>
 
-                <div class="faq bg-co-white rounded-mobile py-30p pr-30p pl-34p lg:pt-40p lg:pb-44p lg:pl-90p lg:pr-60p">
+                <div
+                    class="faq bg-co-white rounded-mobile py-30p pr-30p pl-34p lg:pt-40p lg:pb-44p lg:pl-90p lg:pr-60p">
                     <input id="chk2" type="checkbox" class="hidden">
                     <label for="chk2"
                         class="cursor-pointer flex flex-row items-center justify-between gap-5 overflow-hidden relative">
                         <span class="faq-heading inline-block text-co-mo-h2 lg:text-co-h5-sbold">Quam vehicula faucibus
                             amet lorem. Quam vehicula faucibus amet lorem. Quam vehicula? </span>
 
-                            <span class="faq-arrow">
-                                <svg class="rotate-me" width="36" height="36" viewBox="0 0 24 24"
-                                    fill="none" xmlns="http://www.w3.org/2000/svg"><g id="vuesax/linear/arrow-right"><g id="vuesax/linear/arrow-right_2"><g id="arrow-right">
-                                        <path class="stroke-co-yellow" id="Vector"
-                                                    d="M8.91003 19.9201L15.43 13.4001C16.2 12.6301 16.2 11.3701 15.43 10.6001L8.91003 4.08008"
-                                                    stroke="#292D32" stroke-width="3.5" stroke-miterlimit="10"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                            </g>
+                        <span class="faq-arrow">
+                            <svg class="rotate-me" width="36" height="36" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="vuesax/linear/arrow-right">
+                                    <g id="vuesax/linear/arrow-right_2">
+                                        <g id="arrow-right">
+                                            <path class="stroke-co-yellow" id="Vector"
+                                                d="M8.91003 19.9201L15.43 13.4001C16.2 12.6301 16.2 11.3701 15.43 10.6001L8.91003 4.08008"
+                                                stroke="#292D32" stroke-width="3.5" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
                                         </g>
                                     </g>
-                                </svg>
-                            </span>                    </label>
+                                </g>
+                            </svg>
+                        </span> </label>
                     <div class="faq-text text-co-p2 lg:text-co-h5 p-0 transition-all ease-in-out pt-5">Quam vehicula
                         faucibus amet lorem. Nunc ligula suspendisse duis etiam duis. Mauris fermentum praesent tellus
                         euismod. </div>
                 </div>
 
-                <div class="faq bg-co-white rounded-mobile py-30p pr-30p pl-34p lg:pt-40p lg:pb-44p lg:pl-90p lg:pr-60p">
+                <div
+                    class="faq bg-co-white rounded-mobile py-30p pr-30p pl-34p lg:pt-40p lg:pb-44p lg:pl-90p lg:pr-60p">
                     <input id="chk3" type="checkbox" class="hidden">
                     <label for="chk3"
                         class="cursor-pointer flex flex-row items-center justify-between gap-5 overflow-hidden relative">
@@ -521,9 +572,12 @@
                             amet lorem. Quam vehicula faucibus amet lorem. </span>
 
                         <span class="faq-arrow">
-                            <svg class="rotate-me" width="36" height="36" viewBox="0 0 24 24"
-                                fill="none" xmlns="http://www.w3.org/2000/svg"><g id="vuesax/linear/arrow-right"><g id="vuesax/linear/arrow-right_2"><g id="arrow-right">
-                                    <path class="stroke-co-yellow" id="Vector"
+                            <svg class="rotate-me" width="36" height="36" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="vuesax/linear/arrow-right">
+                                    <g id="vuesax/linear/arrow-right_2">
+                                        <g id="arrow-right">
+                                            <path class="stroke-co-yellow" id="Vector"
                                                 d="M8.91003 19.9201L15.43 13.4001C16.2 12.6301 16.2 11.3701 15.43 10.6001L8.91003 4.08008"
                                                 stroke="#292D32" stroke-width="3.5" stroke-miterlimit="10"
                                                 stroke-linecap="round" stroke-linejoin="round" />
@@ -587,6 +641,34 @@
         </div>
 
     </div>
+
+    <script src="assets/js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            //   direction: 'vertical',
+            loop: true,
+
+            // If we need pagination
+            //   pagination: {
+            //     el: '.swiper-pagination',
+            //   },
+
+            // Navigation arrows
+            //   navigation: {
+            //     nextEl: '.swiper-button-next',
+            //     prevEl: '.swiper-button-prev',
+            //   },
+
+            // And if we need scrollbar
+            //   scrollbar: {
+            //     el: '.swiper-scrollbar',
+            //   },
+        });
+    </script>
 
 </body>
 

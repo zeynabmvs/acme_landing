@@ -157,27 +157,27 @@ body {
         transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
     }
 
-    .card {
+    .testimonial {
         position: relative;
         transition: color .3s;
         overflow: hidden;
         z-index: 100;
     }
 
-    .card:hover {
+    .testimonial:hover {
         @apply text-co-white;
     }
 
-    .card:hover .card-name {
+    .testimonial:hover .card-name {
         @apply text-co-yellow;
     }
 
-    .card:hover .card-arrow-l path {
+    .testimonial:hover .card-arrow-l path {
         @apply fill-co-white;
     }
 }
 
-.card::before {
+.testimonial::before {
     content: "";
     z-index: -1;
     position: absolute;
@@ -188,14 +188,14 @@ body {
     transform: scaleY(0);
     transform-origin: 50% 100%;
     transition: transform 0.3s ease-out;
-    background-image: url("/assets/img/customer1.jpeg");
+    background-image: url("/assets/img/customer2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     filter: brightness(35%)
 }
 
-.card:hover::before {
+.testimonial:hover::before {
     opacity: 1;
     transform: scaleY(1);
     transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
@@ -233,3 +233,8 @@ body {
     transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transform: rotate(90deg);
 }
+
+/* .swiper {
+    width: 600px;
+    height: 300px;
+  } */
