@@ -9,11 +9,9 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <!-- displays site properly based on user's device -->
 
-    <link href="dist/style.css" rel="stylesheet" type="text/css">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
-
+    <link href="dist/style.css" rel="stylesheet" type="text/css">
 
 </head>
 
@@ -357,14 +355,14 @@
 
                 <!-- navigation buttons -->
                 <div class="flex flex-row justify-center gap-10">
-                    <button class="card-arrow-l">
+                    <button class="swiper-button-prev card-arrow-l">
                         <svg width="41" height="17" viewBox="0 0 41 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M0.914062 8.48779L9.21484 0.187012L9.21484 6.43701L40.4648 6.43701V10.5386L9.21484 10.5386L9.21484 16.7886L0.914062 8.48779Z"
                                 fill="#262626" />
                         </svg>
                     </button>
-                    <button class="">
+                    <button class="swiper-button-next">
                         <svg width="41" height="17" viewBox="0 0 41 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M40.0156 8.48779L31.7148 16.7886V10.5386H0.464844V6.43701H31.7148V0.187012L40.0156 8.48779Z"
@@ -658,10 +656,10 @@
             //   },
 
             // Navigation arrows
-            //   navigation: {
-            //     nextEl: '.swiper-button-next',
-            //     prevEl: '.swiper-button-prev',
-            //   },
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
 
             // And if we need scrollbar
             //   scrollbar: {

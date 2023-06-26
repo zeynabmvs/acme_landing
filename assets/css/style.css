@@ -234,7 +234,23 @@ body {
     transform: rotate(90deg);
 }
 
-/* .swiper {
-    width: 600px;
-    height: 300px;
-  } */
+
+/* Swiper customization */
+
+.swiper-button-next:after, 
+.swiper-rtl .swiper-button-prev:after {
+    content: '';
+}
+
+.swiper-button-prev:after, 
+.swiper-rtl .swiper-button-next:after {
+    content: '';
+}
+
+.swiper-button-next, 
+.swiper-button-prev {
+    position: relative;
+    width: auto;
+    height: auto;
+    margin: 0;
+}
