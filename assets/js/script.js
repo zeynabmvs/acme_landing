@@ -16,7 +16,7 @@ var bg_url = ''
 
 testimonial.addEventListener('mouseenter', function() {
     bg_url = document.querySelector('.swiper-slide-active img').getAttribute('src');
-    testimonial.style.setProperty('--before-background-image', 'url(/'+ bg_url + ')');
+    testimonial.style.setProperty('--before-background-image', 'url(../'+ bg_url + ')');
 })
 
 testimonial.addEventListener('mouseleave', function() {
