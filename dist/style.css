@@ -730,6 +730,14 @@ video {
   display: none;
 }
 
+.aspect-auto {
+  aspect-ratio: auto;
+}
+
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+
 .h-1p {
   height: 1px;
 }
@@ -1003,7 +1011,7 @@ video {
 }
 
 .font-primary {
-  font-family: Noto;
+  font-family: Noto, Sans-serif;
 }
 
 .text-2xl {
@@ -1449,10 +1457,6 @@ body {
 
   .lg\:w-472p {
     width: 472px;
-  }
-
-  .lg\:w-5\/6 {
-    width: 83.333333%;
   }
 
   .lg\:w-auto {

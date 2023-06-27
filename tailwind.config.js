@@ -96,7 +96,7 @@ module.exports = {
         },
         extend: {
             fontFamily: {
-                primary: "Noto",
+                'primary': "Noto, Sans-serif"
             },
             colors: {
                 'co-white': '#FFFFFF',
