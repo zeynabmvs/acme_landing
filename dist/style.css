@@ -605,7 +605,7 @@ video {
 .box {
   position: relative;
   transform: perspective(1px) translateZ(0);
-  transition: color .5s;
+  transition: color .3s;
   overflow: hidden;
 }
 
@@ -621,7 +621,7 @@ video {
   right: 0;
   transform: scaleY(0);
   transform-origin: 50% 100%;
-  transition: transform 0.8s ease-out;
+  transition: transform 0.5s ease-out;
 }
 
 .box:hover::before {
@@ -652,6 +652,30 @@ video {
   fill: #FFFFFF;
 }
 
+.testimonial::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: 50% 100%;
+  transition: transform 0.3s ease-out;
+  background-image: var(--before-background-image, url(''));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  filter: brightness(35%)
+}
+
+.testimonial:hover::before {
+  opacity: 1;
+  transform: scaleY(1);
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
 .faq-arrow {
   display: flex;
   height: 3rem;
@@ -675,6 +699,30 @@ video {
 
 .faq-arrow:hover svg path {
   stroke: #FFFFFF;
+}
+
+.faq input[type="checkbox"]:checked ~  div {
+  transform: scaleY(1);
+  max-height: 350px;
+  transition: all .3s ease-in-out;
+}
+
+.faq input[type='checkbox']:not(:checked) ~  div {
+  transform: scaleY(0);
+  transform-origin: top;
+  max-height: 0;
+  overflow: hidden;
+  position: relative;
+  transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.rotate-me {
+  transition: transform 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.faq input[type="checkbox"]:checked + label .rotate-me {
+  transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transform: rotate(90deg);
 }
 
 .relative {
@@ -1128,6 +1176,10 @@ video {
   src: url(../assets/fonts/NotoSans-Regular.ttf) format('truetype');
 
   font-weight: 400;
+
+  font-style: normal;
+
+  font-display: swap;
 }
 
 @font-face {
@@ -1136,6 +1188,10 @@ video {
   src: url(../assets/fonts/NotoSans-SemiBold.ttf) format('truetype');
 
   font-weight: 600;
+
+  font-style: normal;
+
+  font-display: swap;
 }
 
 @font-face {
@@ -1144,11 +1200,13 @@ video {
   src: url(../assets/fonts/NotoSans-Bold.ttf) format('truetype');
 
   font-weight: 700;
+
+  font-style: normal;
+
+  font-display: swap;
 }
 
-body {
-  color: #262626;
-}
+/* Custom contaier  */
 
 .co-container {
   max-width: 90%;
@@ -1212,54 +1270,6 @@ body {
   100% {
     transform: rotate(90deg);
   }
-}
-
-.testimonial::before {
-  content: "";
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform: scaleY(0);
-  transform-origin: 50% 100%;
-  transition: transform 0.3s ease-out;
-  background-image: var(--before-background-image, url(''));
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  filter: brightness(35%)
-}
-
-.testimonial:hover::before {
-  opacity: 1;
-  transform: scaleY(1);
-  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-}
-
-.faq input[type="checkbox"]:checked ~  div {
-  transform: scaleY(1);
-  max-height: 350px;
-  transition: all .3s ease-in-out;
-}
-
-.faq input[type='checkbox']:not(:checked) ~  div {
-  transform: scaleY(0);
-  transform-origin: top;
-  max-height: 0;
-  overflow: hidden;
-  position: relative;
-  transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.rotate-me {
-  transition: transform 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.faq input[type="checkbox"]:checked + label .rotate-me {
-  transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  transform: rotate(90deg);
 }
 
 /* Swiper customization */
