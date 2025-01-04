@@ -802,6 +802,10 @@ video {
   height: 70px;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .w-2\/3 {
   width: 66.666667%;
 }
@@ -832,6 +836,10 @@ video {
 
 .max-w-9 {
   max-width: 90%;
+}
+
+.max-w-\[140px\] {
+  max-width: 140px;
 }
 
 .shrink-0 {
