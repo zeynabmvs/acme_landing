@@ -39,7 +39,7 @@ Acme Co. Landing Page is a sleek, mobile-first, and fully responsive landing pag
 
 ## Live demo
 
-Explore the live demo here: [Acme Co. Landing Page on GitHub Pages] (https://zeynabmvs.github.io/acme_landing/)
+Explore the live demo here: [Acme Co. Landing Page on GitHub Pages](https://zeynabmvs.github.io/acme_landing/)
 
 ## Future Enhancements
 
