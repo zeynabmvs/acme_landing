@@ -20,13 +20,8 @@ Acme Co. Landing Page is a sleek, mobile-first, and fully responsive landing pag
 
 ## Screenshots
 
-### Desktop View
-![Desktop View](screenshots/desktop.png)  
-*The landing page as seen on a desktop screen.*
-
-### Mobile View
-![Mobile View](screenshots/mobile.png)  
-*Fully responsive design optimized for mobile devices.*
+![Screenshot](screenshot.jpg)  
+*The landing page on different screen sizes.*
 
 ## How to Use
 
