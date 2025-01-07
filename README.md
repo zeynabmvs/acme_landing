@@ -36,6 +36,10 @@ Acme Co. Landing Page is a sleek, mobile-first, and fully responsive landing pag
 
 Explore the live demo here: [Acme Co. Landing Page on GitHub Pages](https://zeynabmvs.github.io/acme_landing/)
 
+## Design Credit
+
+The design for this project is sourced from the Figma Community. You can find the original design here: [Figma Design Link](https://www.figma.com/community/file/1198413387972983198)
+
 ## Future Enhancements
 
 - Add more sections (e.g., testimonials, pricing plans, or a blog section).
